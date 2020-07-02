@@ -2,14 +2,14 @@
 font-family: 'Muli', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
-*{
+* {
     background-color: #121212;
     margin: 0;
     padding: 0;
     color: #fff;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,38 +19,122 @@ header{
     margin: 1%;
 }
 
+.brand-logo{
+    font-family: "Ubuntu", sans-serif;
+    background-color: #1e1e1e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.brand-logo:hover{
+    cursor: pointer;
+}
 
-nav a, button{
+nav a,button {
     color: #FFFFFF;
     padding: 10px;
     text-decoration: none;
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     border: #fff solid 1px;
     border-radius: 5px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
 
-nav a:hover{
-    color : #03dac6;
+nav a:hover {
+    color: #03dac6;
     background-color: #000;
+    font-size: 20px;
 }
 
-header button:hover{
-    color : #ffff00;
+header button:hover {
+    color: #ffff00;
     cursor: pointer;
     background-color: #000;
 }
 
-nav a{
+nav a {
     margin: 10px;
 }
 
-nav{
+nav {
     background-color: hsl(0, 0%, 12%);
 }
 
-.active{
+.active {
     background-color: #fff;
     color: #000;
 }
 
+.intro-container {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 50px;
+}
+
+.hi {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 60px;
+}
+
+
+.intro {
+    font-family: 'Comfortaa';
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.interests {
+    background-color: rgba(30, 30, 30, 0.8);
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    border: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px;
+    transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s;
+
+}
+
+.interests:hover {
+    color: #fa7d09;
+    font-size: 22px;
+}
+
+.name {
+    color: #03dac6;
+    transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s;
+}
+
+.name:hover {
+    color: #ffff00;
+    font-size: 55px;
+}
+
+.interests-container {
+    font-size: 20px;
+    margin: 10px, 0;
+}
+
+.icons {
+    display: flex;
+    margin: 5% auto;
+    width: 70%;
+    font-size: 50px;
+}
+
+div svg {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: #FFFFFF solid 1px;
+    border-radius: 30%;
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: background-color 0.3s ease 0s, transform 0.3s ease-in-out 0s;
+}
+
+div svg:hover{
+    border: #ffff00 solid 1px;
+    border-radius: 50%;
+    opacity: 1;
+    transform: rotate(360deg);
+    transform: scale(1.5, 1.5);
+}
