@@ -2,6 +2,8 @@
 font-family: 'Muli', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 * {
     background-color: #121212;
     margin: 0;
@@ -20,11 +22,9 @@ header {
 }
 
 .brand-logo{
-    font-family: "Ubuntu", sans-serif;
-    background-color: #1e1e1e;
-    font-size: 20px;
-    font-weight: bold;
+    width: 200px;
 }
+
 .brand-logo:hover{
     cursor: pointer;
 }
@@ -137,4 +137,154 @@ div svg:hover{
     opacity: 1;
     transform: rotate(360deg);
     transform: scale(1.5, 1.5);
+}
+
+/* About */
+
+.profile-img{
+    border-radius: 50%;
+    width: 250px;
+    margin: auto;
+}
+
+.out-shell{
+    background-color: #8a8181;
+    padding: 20px;
+    border-radius: 50%;
+    margin: auto;
+    animation: aura 3s ease-in infinite;
+}
+@keyframes aura{
+    0%{
+        background-color: #121212;
+    }
+    50%{
+        background-color: #928383;
+    }
+    100%{
+        background-color: #8a8181;
+    }
+}
+
+.outer-shell{
+
+    background-color: #5a5252;
+    padding: 25px;
+    border-radius: 50%;
+    margin: auto;
+    animation: aura-outer 3s ease-in infinite;
+}
+@keyframes aura-outer{
+    0%{
+        background-color: #121212;
+    }
+    50%{
+        background-color: #3c3838;
+    }
+    100%{
+        background-color: #5a5252;
+    }
+}
+.outest-shell{
+    
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 50%;
+    margin: auto;
+    animation: aura-outest 3s ease-in infinite;
+}
+@keyframes aura-outest{
+    0%{
+        background-color: #121212;
+    }
+    50%{
+        background-color: #1b1b1b;
+    }
+    100%{
+        background-color: #1e1e1e;
+    }
+}
+
+.bio{
+   flex : 2;
+   padding: 20px;
+   
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px 0px;
+}
+
+.profile-img-container{
+    padding: 10px;   
+}
+
+.cnt-heading{
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-size: 40px;
+    padding: 20px;
+    color: #03dac6;
+    transition: color 0.2s ease-in 0s, font-size 0.2s ease-in 0s;
+    opacity: 0.8;
+}
+
+.cnt-heading:hover{
+    color: #fff;
+    font-size: 45px;
+    opacity: 1;  
+}
+
+.bio p{
+    margin: 20px 0px;
+    padding: 10px 0px;
+    color: #fff;
+    font-family:  'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-size: 20px;
+}
+
+#classy-line{
+   
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin: 10px 0px;
+    opacity: 0.7;
+    font-family: "Pacifico";
+    font-size: 20px;
+    border-radius: 10px;
+}
+#classy-line:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+.cnt-sub-heading{
+    margin: 10px 20px;
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    color : #ffff00;
+}
+
+.skills ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+
+.skills li{
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family:'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+}
+
+
+.skills li:hover {
+    color: #fa7d09;
+    font-size: 20px;
 }
