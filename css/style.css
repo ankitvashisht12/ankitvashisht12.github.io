@@ -288,3 +288,51 @@ div svg:hover{
     color: #fa7d09;
     font-size: 20px;
 }
+
+/* Achievements - About */
+
+.cert-card{
+   padding: 10px;
+   background-color: #1e1e1e;
+   margin: 15px;
+   border-radius: 10px;
+}
+
+.cert-card > h4{
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-weight: bold;
+    background-color: #1e1e1e;
+    padding: 10px 0px;
+}
+
+.cert-card > h5{
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    background-color: #1e1e1e;
+    padding: 10px 0px;
+}
+
+.cert-card > div{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.cert-card button:hover{
+    background-color: #fff;
+    color:#000;
+    cursor: pointer;
+}
+
+
+
+.cert-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    
+}
+
+/* Blogs */
+
