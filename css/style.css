@@ -11,6 +11,7 @@ font-family: 'Ubuntu', sans-serif; */
     color: #fff;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@ header {
     border-radius: 10px;
     margin: 1%;
 }
+
 
 .brand-logo{
     width: 200px;
@@ -64,9 +66,17 @@ nav {
     color: #000;
 }
 
+#index-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .intro-container {
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 70%;
     font-size: 50px;
 }
@@ -132,11 +142,8 @@ div svg {
 }
 
 div svg:hover{
-    border: #ffff00 solid 1px;
     border-radius: 50%;
     opacity: 1;
-    transform: rotate(360deg);
-    transform: scale(1.5, 1.5);
 }
 
 /* About */
@@ -281,6 +288,7 @@ div svg:hover{
     margin: 10px 20px;
     border-radius: 10px;
     font-family:'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    transition: all 0.2s ease-in-out 0.1s;
 }
 
 
@@ -336,3 +344,129 @@ div svg:hover{
 
 /* Blogs */
 
+#blog-container {
+    margin: 20px 10px;
+}
+
+.blog-card{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    border: #fff solid 3px;
+    border-radius: 10px;
+}
+
+.blog-card h3{
+    font-weight: bold;
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-size: 25px;
+    padding: 15px 0px;
+}
+
+
+.blog-card p{
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-size: 15px;
+    padding: 10px  0px;
+    color: rgb(199, 192, 192);
+}
+
+.author-detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 0px;
+
+}
+
+.author-detail h5{
+ 
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
+    font-size: 10px;
+    color: #c3baba;
+    padding: 2px 0px;
+    letter-spacing: 2px;
+}
+
+.blog-card img{
+    border-radius: 10px;    
+}
+
+.blog-cnt button{
+    border-radius: 30px;
+    width: 100px;
+    border: none;
+    background-color: #952fd4;
+    background-image: linear-gradient(to right, #57197e, #9235cc);
+    cursor: pointer;
+}
+
+.blog-cnt button:hover{
+    background-color: #16b1b1;
+    background-image: linear-gradient(to right, #0D47A1, #1976D2 );
+}
+
+.blog-cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Contact  */
+
+.contact-heading{
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+hr{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
+
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-info-container li{
+    list-style-type: none;
+}
+
+.contact-item{
+    display: flex;
+    background-color: #121212;
+    border: #fff solid 1px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.contact-item svg{
+    background-color: #fff;
+    opacity: 1;
+    transition: none;
+    border-radius: 50%;
+    margin: 0;
+
+}
+.contact-item svg:hover{
+    transition: none;
+}
+
+.contact-item h2{
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
+    padding: 0px 20px;
+    font-weight: normal;
+}
+
+.contact-item h2:hover{
+    color: #00ffff;
+}
