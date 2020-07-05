@@ -9,6 +9,7 @@ font-family: 'Ubuntu', sans-serif; */
     margin: 0;
     padding: 0;
     color: #fff;
+    /* box-sizing: border-box; */
 }
 
 
@@ -369,6 +370,7 @@ div svg:hover{
     font-size: 15px;
     padding: 10px  0px;
     color: rgb(199, 192, 192);
+    background-color: none;
 }
 
 .author-detail{
@@ -470,3 +472,105 @@ hr{
 .contact-item h2:hover{
     color: #00ffff;
 }
+
+
+/* #page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+} */
+
+
+/* #footer{
+width: 100%;
+height: 2rem;
+bottom: 0;
+position: fixed;
+background-color: #1e1e1e;
+text-align: center;         
+font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+padding-top: 1em;
+} */
+
+
+/* Projects */
+
+
+#project-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.2em;
+    justify-content: space-evenly;
+}
+
+.project-card{
+    margin: 1em;
+    padding: 1em;
+    width: 350px;
+    border-radius: 10px;
+    border: #fff solid 1px;
+}
+
+.project-card > p, h1{
+    font-family:  'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    padding: 1em;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.project-card h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.project-card p{
+    font-size: 1em;
+    color: rgb(194, 185, 185);
+}
+
+
+.project-tags li{
+    list-style: none;
+    background-color: #1e1e1e;
+    padding: 0.2em;
+    display: inline-flex;
+    font-family:  'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-size: 0.8em;
+    border-radius: 35px;
+    margin: 0.5em 1em;
+    padding: 0.3em 0.5em;
+
+}
+
+.project-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 0em;
+}
+
+.project-card button{
+    background-color: #600897;
+    font-weight: bold;
+    border-radius: 300px;
+    border: none;
+    cursor: pointer;
+}
+
+.info-project {
+    background-color: #1e1e1e;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 35px;
+    text-align: center;
+    font-family:  'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
+    
+}
+
+.info-project > a{
+    background-color: #1e1e1e;
+    text-decoration: none;
+    font-family:  'Pacifico', cursive; 
+}
+
