@@ -1,38 +1,16 @@
-/* font-family: 'Comfortaa', cursive;
-font-family: 'Muli', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento &display=swap');
 
 * {
     background-color: #121212;
     margin: 0;
     padding: 0;
     color: #fff;
-    /* box-sizing: border-box; */
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    
 }
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: hsl(0, 0%, 12%);
-    border-radius: 10px;
-    margin: 1%;
-}
-
-
-.brand-logo{
-    width: 200px;
-}
-
-.brand-logo:hover{
-    cursor: pointer;
-}
-
-nav a,button {
+button{
     color: #FFFFFF;
     padding: 10px;
     text-decoration: none;
@@ -42,32 +20,172 @@ nav a,button {
     transition: all 0.2s ease-in-out 0s;
 }
 
-nav a:hover {
-    color: #03dac6;
-    background-color: #000;
-    font-size: 20px;
-}
 
-header button:hover {
-    color: #ffff00;
+button:hover {
     cursor: pointer;
     background-color: #000;
 }
 
-nav a {
-    margin: 10px;
+
+/*Basic Styles*/
+nav {
+    background: #1e1e1e;
 }
+.item  a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    border: #fff solid 1px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out 0s;
+    width: 5em;
+    font-size: 0.9em;
+    
+}
+
+.menu{   
+    list-style-type: none;
+}
+
+.menu li {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+.brand-logo{
+    width: 200px;
+   
+}
+
+.brand-logo:hover{
+    cursor: pointer;
+}
+
+.item {
+    padding: 10px;
+    background-color: #121212;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #03dac6;
+    background-color: #000;
+    font-size: 1em;
+}
+
+
+.active{
+    color: #000;
+    background-color:#fff;
+}
+
+
+
+
+
+/* Mobile menu */
 
 nav {
-    background-color: hsl(0, 0%, 12%);
+    background: #1e1e1e;
+    margin: 1em;
+    border-radius: 10px;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 0em 0.4em;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+    border-radius: 10px;
 }
 
-.active {
-    background-color: #fff;
-    color: #000;
+.logo a{
+    background-color: #1e1e1e;
 }
 
-#index-main{
+.toggle a{
+    background-color: #1e1e1e;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+    background: #1e1e1e;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.item a{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.active .item {
+    display: block;
+}
+.button.secondary { /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+}
+
+
+
+/* Desktop menu */
+@media all and (min-width: 1000px) {
+    
+    .nav-bar{
+       
+        background-color: hsl(0, 0%, 12%);
+        border-radius: 10px;
+        margin: 1%;
+    }
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background-color: #1e1e1e;
+    }
+
+    .item a{
+        width: 8em;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block; 
+        width: auto;
+        background-color: #1e1e1e;
+    }
+    .button {
+        order: 2;
+    }
+    .toggle {
+        display: none;
+    }
+
+    
+    
+}
+
+
+
+/* index.html main content */
+#index-main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,7 +207,7 @@ nav {
 
 
 .intro {
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     padding: 10px 0;
     margin-bottom: 10px;
 }
@@ -97,10 +215,11 @@ nav {
 .interests {
     background-color: rgba(30, 30, 30, 0.8);
     font-size: 20px;
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     border: #FFFFFF;
     border-radius: 50px;
     padding: 10px;
+    margin: 1em 0;
     transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s;
 
 }
@@ -121,6 +240,11 @@ nav {
 }
 
 .interests-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     font-size: 20px;
     margin: 10px, 0;
 }
@@ -132,7 +256,7 @@ nav {
     font-size: 50px;
 }
 
-div svg {
+.icons a > svg {
     background-color: #FFFFFF;
     padding: 10px;
     border: #FFFFFF solid 1px;
@@ -142,39 +266,39 @@ div svg {
     transition: background-color 0.3s ease 0s, transform 0.3s ease-in-out 0s;
 }
 
-div svg:hover{
+.icons a > svg:hover {
     border-radius: 50%;
     opacity: 1;
 }
 
 /* About */
 
-.profile-img{
+.profile-img {
     border-radius: 50%;
     width: 250px;
     margin: auto;
 }
 
-.out-shell{
+.out-shell {
     background-color: #8a8181;
     padding: 20px;
     border-radius: 50%;
     margin: auto;
     animation: aura 3s ease-in infinite;
 }
-@keyframes aura{
-    0%{
+@keyframes aura {
+    0% {
         background-color: #121212;
     }
-    50%{
+    50% {
         background-color: #928383;
     }
-    100%{
+    100% {
         background-color: #8a8181;
     }
 }
 
-.outer-shell{
+.outer-shell {
 
     background-color: #5a5252;
     padding: 25px;
@@ -182,57 +306,57 @@ div svg:hover{
     margin: auto;
     animation: aura-outer 3s ease-in infinite;
 }
-@keyframes aura-outer{
-    0%{
+@keyframes aura-outer {
+    0% {
         background-color: #121212;
     }
-    50%{
+    50% {
         background-color: #3c3838;
     }
-    100%{
+    100% {
         background-color: #5a5252;
     }
 }
-.outest-shell{
-    
+.outest-shell {
+
     background-color: #1e1e1e;
     padding: 30px;
     border-radius: 50%;
     margin: auto;
     animation: aura-outest 3s ease-in infinite;
 }
-@keyframes aura-outest{
-    0%{
+@keyframes aura-outest {
+    0% {
         background-color: #121212;
     }
-    50%{
+    50% {
         background-color: #1b1b1b;
     }
-    100%{
+    100% {
         background-color: #1e1e1e;
     }
 }
 
-.bio{
-   flex : 2;
-   padding: 20px;
-   
+.bio {
+    flex: 2;
+    padding: 20px;
+
 }
 
-.profile-container{
+.profile-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 10px;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
-.profile-img-container{
-    padding: 10px;   
+.profile-img-container {
+    padding: 10px;
 }
 
-.cnt-heading{
+.cnt-heading {
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-size: 40px;
     padding: 20px;
@@ -241,54 +365,55 @@ div svg:hover{
     opacity: 0.8;
 }
 
-.cnt-heading:hover{
+.cnt-heading:hover {
     color: #fff;
     font-size: 45px;
-    opacity: 1;  
+    opacity: 1;
 }
 
-.bio p{
-    margin: 20px 0px;
-    padding: 10px 0px;
+.bio p {
+    margin: 20px 0;
+    padding: 10px 0;
     color: #fff;
-    font-family:  'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-family: 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-size: 20px;
 }
 
-#classy-line{
-   
+#classy-line {
+
     background-color: #1e1e1e;
     padding: 10px;
-    margin: 10px 0px;
+    margin: 10px 0;
     opacity: 0.7;
     font-family: "Pacifico";
     font-size: 20px;
     border-radius: 10px;
 }
-#classy-line:hover{
+#classy-line:hover {
     opacity: 1;
     cursor: default;
 }
 
-.cnt-sub-heading{
+.cnt-sub-heading {
     margin: 10px 20px;
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-    color : #ffff00;
+    color: #ffff00;
 }
 
-.skills ul{
+.skills ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    flex-wrap: wrap;
 
 }
 
-.skills li{
+.skills li {
     background-color: #1e1e1e;
     padding: 10px;
     margin: 10px 20px;
     border-radius: 10px;
-    font-family:'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     transition: all 0.2s ease-in-out 0.1s;
 }
 
@@ -300,27 +425,28 @@ div svg:hover{
 
 /* Achievements - About */
 
-.cert-card{
-   padding: 10px;
-   background-color: #1e1e1e;
-   margin: 15px;
-   border-radius: 10px;
+.cert-card {
+    padding: 10px;
+    background-color: #1e1e1e;
+    margin: 15px;
+    border-radius: 10px;
+
 }
 
-.cert-card > h4{
+.cert-card > h4 {
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-weight: bold;
     background-color: #1e1e1e;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
-.cert-card > h5{
+.cert-card > h5 {
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     background-color: #1e1e1e;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
-.cert-card > div{
+.cert-card > div {
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
@@ -328,19 +454,19 @@ div svg:hover{
     align-items: center;
 }
 
-.cert-card button:hover{
+.cert-card button:hover {
     background-color: #fff;
-    color:#000;
+    color: #000;
     cursor: pointer;
 }
 
 
-
-.cert-container{
+.cert-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: space-around;
     margin: 10px;
-    
+
 }
 
 /* Blogs */
@@ -349,7 +475,7 @@ div svg:hover{
     margin: 20px 10px;
 }
 
-.blog-card{
+.blog-card {
     margin: 10px;
     padding: 20px;
     display: flex;
@@ -357,43 +483,44 @@ div svg:hover{
     border-radius: 10px;
 }
 
-.blog-card h3{
+.blog-card h3 {
     font-weight: bold;
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-size: 25px;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 
 
-.blog-card p{
+.blog-card p {
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-size: 15px;
-    padding: 10px  0px;
+    padding: 10px 0;
     color: rgb(199, 192, 192);
     background-color: none;
 }
 
-.author-detail{
+.author-detail {
     display: flex;
     justify-content: space-between;
-    padding: 0px 30px 0px 0px;
+    padding: 0 30px 0 0;
 
 }
 
-.author-detail h5{
- 
-    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
+.author-detail h5 {
+
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-size: 10px;
     color: #c3baba;
-    padding: 2px 0px;
+    padding: 2px 0;
     letter-spacing: 2px;
 }
 
-.blog-card img{
-    border-radius: 10px;    
+.blog-img {
+    border-radius: 10px;
+    margin-left: 2em;
 }
 
-.blog-cnt button{
+.blog-cnt button {
     border-radius: 30px;
     width: 100px;
     border: none;
@@ -402,12 +529,12 @@ div svg:hover{
     cursor: pointer;
 }
 
-.blog-cnt button:hover{
+.blog-cnt button:hover {
     background-color: #16b1b1;
-    background-image: linear-gradient(to right, #0D47A1, #1976D2 );
+    background-image: linear-gradient(to right, #0D47A1, #1976D2);
 }
 
-.blog-cnt{
+.blog-cnt {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -415,96 +542,84 @@ div svg:hover{
 
 /* Contact  */
 
-.contact-heading{
-    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
-    font-size: 20px;
+.contact-heading {
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 1.2em 0;
     font-weight: bold;
 }
 
-hr{
+hr {
     width: 50%;
     margin-left: 25%;
     margin-bottom: 40px;
 }
 
-.contact-info-container{
+.contact-info-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.contact-info-container li{
+.contact-info-container li {
     list-style-type: none;
 }
 
-.contact-item{
+.contact-item {
     display: flex;
     background-color: #121212;
     border: #fff solid 1px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 50px;
-    border-radius: 20px;
-    margin: 20px;
+    padding: 0.625em 3.125em;
+    border-radius: 3em;
+    margin: 1.25em;
+    width: 32vw;
 }
 
-.contact-item svg{
+
+.contact-item a > svg {
     background-color: #fff;
-    opacity: 1;
-    transition: none;
     border-radius: 50%;
     margin: 0;
+    width: 2em;
+    padding: 0.2em;
+    height: 2em;
+    border: #000 solid 2px;
 
 }
-.contact-item svg:hover{
+.contact-item a > svg:hover {
     transition: none;
+
 }
 
-.contact-item h2{
-    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
-    padding: 0px 20px;
+.contact-item h2 {
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    padding: 0 1.25em;
     font-weight: normal;
+    font-size: 2vw;
 }
 
-.contact-item h2:hover{
+.contact-item h2:hover {
     color: #00ffff;
 }
 
 
-/* #page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   
-} */
-
-
-/* #footer{
-width: 100%;
-height: 2rem;
-bottom: 0;
-position: fixed;
-background-color: #1e1e1e;
-text-align: center;         
-font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-padding-top: 1em;
-} */
 
 
 /* Projects */
 
 
-#project-container{
+#project-container {
     display: flex;
     flex-wrap: wrap;
     margin: 1.2em;
     justify-content: space-evenly;
 }
 
-.project-card{
+.project-card {
     margin: 1em;
     padding: 1em;
     width: 350px;
@@ -512,45 +627,45 @@ padding-top: 1em;
     border: #fff solid 1px;
 }
 
-.project-card > p, h1{
-    font-family:  'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+.project-card > p,
+h1 {
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     padding: 1em;
     background-color: #1e1e1e;
     border-radius: 10px;
 }
 
-.project-card h1{
+.project-card h1 {
     font-weight: bold;
     font-size: 2em;
 }
 
-.project-card p{
+.project-card p {
     font-size: 1em;
     color: rgb(194, 185, 185);
 }
 
 
-.project-tags li{
+.project-tags li {
     list-style: none;
     background-color: #1e1e1e;
-    padding: 0.2em;
+    padding: 0.3em 0.5em;
     display: inline-flex;
-    font-family:  'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     font-size: 0.8em;
     border-radius: 35px;
     margin: 0.5em 1em;
-    padding: 0.3em 0.5em;
 
 }
 
-.project-btns{
+.project-btns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em 0em;
+    padding: 1em 0;
 }
 
-.project-card button{
+.project-card button {
     background-color: #600897;
     font-weight: bold;
     border-radius: 300px;
@@ -564,13 +679,24 @@ padding-top: 1em;
     margin: 1em;
     border-radius: 35px;
     text-align: center;
-    font-family:  'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui; 
-    
+    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
+
 }
 
-.info-project > a{
+.info-project > a {
     background-color: #1e1e1e;
     text-decoration: none;
-    font-family:  'Pacifico', cursive; 
+    font-family: 'Pacifico', cursive;
 }
 
+
+
+
+/* Resonsive blog item */
+@media screen and (max-width: 700px) {
+
+    .blog-img-container {
+        display: none;
+    }
+
+}
