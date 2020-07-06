@@ -544,10 +544,10 @@ nav {
 
 .contact-heading {
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-    font-size: 20px;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 1.2em 0;
     font-weight: bold;
 }
 
@@ -576,6 +576,7 @@ hr {
     padding: 0.625em 3.125em;
     border-radius: 3em;
     margin: 1.25em;
+    width: 32vw;
 }
 
 
@@ -598,7 +599,7 @@ hr {
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
     padding: 0 1.25em;
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 2vw;
 }
 
 .contact-item h2:hover {
