@@ -1,7 +1,3 @@
-/* font-family: 'Comfortaa', cursive;
-font-family: 'Muli', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
 @import url('https://fonts.googleapis.com/css2?family=Sacramento &display=swap');
 
 * {
@@ -10,7 +6,7 @@ font-family: 'Ubuntu', sans-serif; */
     padding: 0;
     color: #fff;
     font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-    /* box-sizing: border-box; */
+    
 }
 
 
@@ -29,196 +25,6 @@ button:hover {
     cursor: pointer;
     background-color: #000;
 }
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2em 1em;
-    background-color: hsl(0, 0%, 12%);
-    border-radius: 10px;
-    margin: 1%;
-}
-
-.burger{
-    display: none;
-}
-
-.burger div{
-    width: 1.5em;
-    height: 0.2em;
-    background-color: #fff;
-    margin: 0.23em;  
-}
-
-.brand-logo{
-    width: 200px;
-}
-
-.brand-logo:hover{
-    cursor: pointer;
-}
-
-nav a,button {
-    color: #FFFFFF;
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-    border: #fff solid 1px;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-nav a:hover {
-    color: #03dac6;
-    background-color: #000;
-    font-size: 20px;
-}
-
-header button:hover {
-    color: #ffff00;
-    cursor: pointer;
-    background-color: #000;
-}
-
-nav a {
-    margin: 10px;
-}
-
-nav {
-    background-color: hsl(0, 0%, 12%);
-}
-
-.active {
-    background-color: #fff;
-    color: #000;
-} */
-
-
- 
-/* .nav-bar {
-    padding: 1.2em 1em;
-    background-color: hsl(0, 0%, 12%);
-    border-radius: 10px;
-    margin: 1%;
-    height: 4em;
-}
-
-.nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1e1e1e;
-}
-
-.brand{
-    text-align: center;
-    background-color: #1e1e1e;
-}
-
-.brand-logo{
-    width: 200px;
-}
-
-.brand-logo:hover{
-    cursor: pointer;
-}
-
-
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a,
-nav ul li a:visited {
-  display: flex;
-  flex-direction: row;
-  padding: 0 20px;
-  line-height: 70px;
-  background: #262626;
-  color: #ffffff;
-  text-decoration: none;
-}
-nav ul li a:hover,
-nav ul li a:visited:hover {
-  background: #2ab1ce;
-  color: #ffffff;
-}
-
-.nav-mobile {
-  display: none;
-  background: #262626;
-  height: 70px;
-  width: 70px;
-}
-
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-    float: right;
-  }
-
-  nav {
-    width: 100%;
-    padding: 70px 0 15px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    float: none;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 20px;
-  }
- 
-}
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: block !important;
-  }
-}
-#nav-toggle {
-  position: absolute;
-  right:0;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-}
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #ffffff;
-  position: absolute;
-  display: block;
-  content: '';
-  transition: all 300ms ease-in-out;
-}
-#nav-toggle span:before {
-  top: -10px;
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
-#nav-toggle.active span {
-  background-color: transparent;
-}
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
-} */
 
 
 /*Basic Styles*/
@@ -376,103 +182,6 @@ nav {
     
 }
 
-
-/* 
-nav a,
-button {
-    color: #FFFFFF;
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-    border: #fff solid 1px;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-nav a:hover {
-    color: #03dac6;
-    background-color: #000;
-    font-size: 20px;
-}
-
-header button:hover {
-    color: #ffff00;
-    cursor: pointer;
-    background-color: #000;
-}
-
-nav a {
-    margin: 10px;
-}
-
-nav {
-    background-color: hsl(0, 0%, 12%);
-}
-
-.active {
-    background-color: #fff;
-    color: #000;
-} */
-
-
-/* new bar */
-
-/* 
-.brand-logo{
-    width: 200px;
-}
-
-.active {
-    background-color: #fff;
-    color: #000;
-}
-
-
-
-
-
-.navbar-nav{
-    margin: 1em;
-}
-
-
-.nav-item{
-    background-color: #1e1e1e;
-    align-items: center;
-}
-
-
-.nav-link, .contact-me-button> button{
-    color: #FFFFFF;
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-    border: #fff solid 1px;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out 0s;
-    margin: 0em 1em;    
-    
-}
-
-
-
-.nav-link:hover{
-    color: #03dac6;
-    background-color: #000;
-    font-size: 20px;
-}
-
-.contact-me-button:hover{
-    color: #03dac6;
-    background-color: #000;
-    font-size: 20px;
-} */
-/* 
-.navbar-nav.navbar-center { 
-    position: absolute; 
-    left: 50%; 
-    transform: translatex(-50%); 
-}  */
 
 
 /* index.html main content */
@@ -897,24 +606,6 @@ hr {
 }
 
 
-/* #page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   
-} */
-
-
-/* #footer{
-width: 100%;
-height: 2rem;
-bottom: 0;
-position: fixed;
-background-color: #1e1e1e;
-text-align: center;         
-font-family: 'Comfortaa', 'Muli', 'Ubuntu', sans-serif, cursive, system-ui;
-padding-top: 1em;
-} */
 
 
 /* Projects */
@@ -998,30 +689,6 @@ h1 {
 }
 
 
-/* Responsive nav-bar */
-/* @media screen and (max-width: 1000px){
-    .burger{
-        display: block;
-        cursor: pointer;
-        margin: 1em;
-        background: #1e1e1e;
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    /* .burger::before{
-        content: '';
-    } */
-
-
-/* header{
-        display: block;
-    }
-
-    .nav-links > a{
-        display: block;
-    }
-} */
 
 
 /* Resonsive blog item */
